@@ -1,6 +1,6 @@
-# Oracle Regex Array
+# Oracle webservice dates
 
-Web services usually expect the date in a particular format. In my experience, this is in the UTC zone (although, zone can usually be added in) and in the format "YYYY-MM-DDTHH24:MI:SSZ" (todo, reference the rfc). 
+Web services usually expect the date in a particular format. In my experience, this is in the UTC zone (although, zone can usually be added in) and in the format "YYYY-MM-DDTHH24:MI:SSZ" (todo, reference the rfc).
 
 ## Install
 
