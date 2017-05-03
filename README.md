@@ -13,7 +13,7 @@ Web services usually expect the date in a particular format. In my experience, t
 ```plsql
 begin
 
-    dbms_output.put_line(ws_dates.get_rfc3399_date());
+    dbms_output.put_line(ws_dates.get_rfc3339_date());
 
 end;
 /

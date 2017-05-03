@@ -1,7 +1,7 @@
 create or replace package body ws_dates
 as
 
-    function get_rfc3399_date(
+    function get_rfc3339_date(
         p_time in timestamp default systimestamp
     )
     return varchar2
@@ -18,7 +18,7 @@ as
 
        return l_date_cmp || 'T' || l_time_cmp || 'Z';
 
-    end get_rfc3399_date;
+   end get_rfc3339_date;
 
 end ws_dates;
 /
