@@ -1,6 +1,6 @@
 # Oracle webservice dates
 
-Web services usually expect the date in a particular format. In my experience, this is in the UTC zone (although, zone can usually be added in) and in the format "YYYY-MM-DDTHH24:MI:SSZ" (todo, reference the rfc).
+Web services usually expect the date in a particular format. In my experience, this is in the UTC zone (although, zone can usually be added in) and in the format "YYYY-MM-DDTHH24:MI:SSZ" - this particular format is defined in [RFC3339](https://tools.ietf.org/html/rfc3339).
 
 ## Install
 
@@ -13,7 +13,7 @@ Web services usually expect the date in a particular format. In my experience, t
 ```plsql
 begin
 
-    dbms_output.put_line(ws_dates.get_ws_date1());
+    dbms_output.put_line(ws_dates.get_rfc3399_date());
 
 end;
 /

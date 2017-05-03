@@ -1,10 +1,8 @@
 create or replace package ws_dates
 as
 
-    -- todo: come up with a better name.
-    -- I feel the format "YYYY-MM-DDTHH24:MI:SSZ" has an rfc
-    -- then, the name should have reference to that rfc
-    function get_ws_date1(
+
+    function get_rfc3399_date(
         p_time in timestamp default systimestamp
     )
     return varchar2;
